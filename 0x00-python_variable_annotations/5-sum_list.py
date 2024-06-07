@@ -2,9 +2,9 @@
 """complex annotaion"""
 
 
-def sum_list(list: [float]) -> float:
+def sum_list(input_list: [float]) -> float:
     """return sum of floatss"""
     sum: float = 0.0
-    for x in list:
+    for x in input_list:
         sum += x
     return sum
