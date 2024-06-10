@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-# this is first task of async await
+"""Defines an asynchronous coroutine"""
 import asyncio
 import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """this the basics of the async wait"""
-    x = random.uniform(0, max_delay)
-    await asyncio.sleep(x)
-    return x
+    """Waits for a random delay between 0 and max_delay"""
+    random_number = random.uniform(0, max_delay)
+    await asyncio.sleep(random_number)
+    return random_number
