@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 """execute multible corotuines"""
-import asyncio
 from typing import List
 
 
