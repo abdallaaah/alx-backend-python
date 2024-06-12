@@ -9,6 +9,6 @@ from typing import Generator
 
 async def async_generator() -> Generator[float, None, None]:
     """loop 10 times"""
-    for i in range(2):
+    for i in range(10):
         await asyncio.sleep(1)
-        yield random.uniform(1, 10)
+        yield random.uniform(0, 10)
